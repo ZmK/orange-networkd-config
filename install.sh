@@ -19,10 +19,11 @@ LAN_DHCP_RANGE_END=200
 
 # Installation
 echo "Installing Packages..."
-sudo yum install -y -q openssh ppp unbound dhcp
+sudo yum install -y -q epel-release systemd-networkd systemd-resolved openssh ppp unbound dhcp
 curl http://www.internic.net/domain/named.root -o ./etc/unbound/root.hints
 
 echo "Configuring DNS Resolver..."
+sudo hostnamectl set-hostname $SERVER_NAME.$DOMAIN --static
 sudo rm -f /etc/resolv.conf
 echo "nameserver 127.0.0.1" >> /etc/resolv.conf
 echo "nameserver ::1" >> /etc/resolv.conf
