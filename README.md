@@ -8,7 +8,7 @@ Des variables sont incluses dans le script et vous permettent de personnaliser l
 ## S'identifier sur le reseau Orange
 
 Vous devez éditer le fichier ```/etc/ppp/peers/orange``` pour etre identifié et donc connecté au reseau Orange.
-Ces identifiants vous ont normalement été communiqué par courrier ou par SMS. Vous pouvez en refaire la demande auprès du Service Client au 3900.
+Ces identifiants vous ont normalement été communiqués par courrier ou par SMS. Vous pouvez en refaire la demande auprès du Service Client au 3900.
 
 ```
 name "fti/*******" # Votre identifiant de connexion
