@@ -1,4 +1,4 @@
-# networkd Orange PPPoE network configuration script for Systemd enabled Linux distributions
+# Networkd Orange PPPoE network configuration script for Systemd enabled Linux distributions
 
 
 ## Configurer les interfaces
