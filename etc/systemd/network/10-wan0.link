@@ -1,0 +1,6 @@
+[Match]
+MACAddress=00:a8:2a:e8:33:34
+
+[Link]
+Name=wan0
+MTUBytes=1508

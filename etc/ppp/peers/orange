@@ -1,0 +1,10 @@
+plugin rp-pppoe.so wan0
+
+name "fti/"
+password ""
+defaultroute
+noauth
+maxfail 1
+noipdefault
+noproxyarp
+linkname orange

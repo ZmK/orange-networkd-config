@@ -1,0 +1,13 @@
+[Unit]
+Description=PPP link to %I
+After=network.target
+
+[Service]
+Type=forking
+PIDFile=/run/ppp-%i.pid
+ExecStart=/usr/sbin/pppd call %I linkname %i updetach
+SuccessExitStatus=0 5 16
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,6 @@
+[Match]
+MACAddress=00:a8:2a:e8:33:35
+
+[Link]
+Name=lan0
+MTUBytes=9000
