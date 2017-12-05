@@ -11,8 +11,8 @@ Vous devez éditer le fichier ```/etc/ppp/peers/orange``` pour etre identifié e
 Ces identifiants vous ont normalement été communiqué par courrier ou par SMS. Vous pouvez en refaire la demande auprès du Service Client au 3900.
 
 ```
-name "fti/*******"
-password "*******"
+name "fti/*******" # Votre identifiant de connexion
+password "*******" # Le mot de passe associé
 ```
 
 
