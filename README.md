@@ -1,5 +1,6 @@
 # Networkd Orange PPPoE configuration script for Systemd enabled Linux distributions
 
+CE SCRIPT FONCTIONNE SEULEMENT SUR CENTOS 7 POUR LE MOMENT
 
 ## Configurer les interfaces
 
