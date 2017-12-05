@@ -30,7 +30,9 @@ echo "nameserver ::1" >> /etc/resolv.conf
 sudo cp ./etc/unbound/* /etc/unbound/
 
 echo "Configuring Interfaces..."
-sudo mkdir /etc/systemd/network
+if [ ! -d /etc/systemd/network ]; then
+  sudo mkdir /etc/systemd/network
+fi
 sudo cp ./etc/systemd/network/* /etc/systemd/network/
 sudo cp ./etc/systemd/system/* /etc/systemd/system/
 sudo cp ./etc/ppp/peers/* /etc/ppp/peers/
