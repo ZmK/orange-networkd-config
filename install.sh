@@ -19,7 +19,8 @@ LAN_DHCP_RANGE_END=200
 
 # Installation
 echo "Installing Packages..."
-sudo yum install -y -q epel-release systemd-networkd systemd-resolved openssh ppp unbound dhcp
+sudo yum install -y -q epel-release
+sudo yum install -y -q systemd-networkd systemd-resolved openssh ppp unbound dhcp rp-pppoe
 curl http://www.internic.net/domain/named.root -o ./etc/unbound/root.hints
 
 echo "Configuring DNS Resolver..."
@@ -49,9 +50,9 @@ sudo systemctl -q enable systemd-networkd
 sudo systemctl -q enable systemd-resolved
 sudo systemctl -q enable unbound
 sudo systemctl -q enable ppp@orange
-sudo systemctl -q enable dhcpd4
+sudo systemctl -q enable dhcpd
 sudo systemctl -q start systemd-resolved
 sudo systemctl -q start systemd-networkd
 sudo systemctl -q start unbound
 sudo systemctl -q start ppp@orange
-sudo systemctl -q start dhcpd4
+sudo systemctl -q start dhcpd
